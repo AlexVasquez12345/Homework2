@@ -1,0 +1,142 @@
+/*
+File: pacific.css
+GUI Assignment: Style a Site with External CSS
+Alexander Vasquez, UMass Lowell Computer Science, Alexander_Vasquez@student.uml.edu
+Copyright (c) 2022 by Alexander. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AV on September 27, 2022.
+Sources:https://www.w3schools.com/css/default.asp
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/* basic setup of the body with the background image setup and the
+   text color, background color, and font family setup to their default values*/
+body {
+	background-image: url("ptrbackground.jpg");
+	background-color: white;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* sets the background image to the right so that the left side
+   can be filled in to be black. Little bit tough to figure but
+   important to remember. Also set it to be no repeat so the image
+   doesn't repeat over and over again.
+*/
+header {
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-color:black;
+	color: white;
+	background-position: right;
+}
+/* set the navigation bar to float to the left and then
+   set the width to 150 pixels
+*/
+nav  {
+	float: left;
+	width: 150px;
+}
+/* set the navigation bar links to have no underline with 
+   text decoration, and the color to be black and the font to be bold
+*/
+nav a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+
+}
+/* sets the unordered list to have no style so we can add the image later
+   a padding of 20 pixels, and no margin with a font size of 1.2 em
+*/
+nav ul {
+	font-size: 1.2em;
+	padding: 20px;
+	margin: 0;
+	list-style-type: none;
+	
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+/* sets the footer to have a margin of 150 pixels to the left so that it appears with the content
+   and not with the navbar. Also add some padding around it as well to give some space. Make the 
+   font style italic, and most important in my opinion: make sure the background color is white.
+   This will allow it to fit in nicely with the content.
+*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: white;
+	margin-left: 150px;
+	font-style:italic;
+	padding: 10px;
+	font-size:0.9em;
+}
+/* set the width to be 80 percent as asked for in the directions, make the background color light
+   blue, the margins of left and right to auto, and the minimum width to be 600px
+   Also note, the entire background is set to light blue, I just overwrite it with white later.
+*/
+#wrapper {
+	background-color: #ADD8E6;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+	min-width: 600px;
+}
+/* the content of the page has the background color of white, it has a margin
+   of 150 to the left to give it space from the navbar, and some padding around
+   it as well to give it some space from the rest of the page
+*/
+#content {
+	background-color: white;
+	margin-left: 150px;
+	padding: 2px 20px 10px 20px;
+}
+#contact{
+	font-size: 0.9em;
+}
+/* set the image to float to the left and add some margain to the bottom and
+   to the right to give it space from the text.
+*/
+img {
+	float:left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+/* any unordered list that is a direct child from content is set to have an all
+   around margain of 15, the image of a marker on each point, and has an inside
+   position to make it line up with the paragraph
+*/
+#content > ul {
+	margin: 15px;
+	list-style-image: url(marker.gif);
+	list-style-position: inside;	
+}
+/*Makes certain text in the paragraph bolded and have a light blue color.*/
+.resort {
+	color: #ADD8E6;
+	font-weight: bold;
+	
+}
